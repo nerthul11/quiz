@@ -1,0 +1,24 @@
+body {
+	background-color: #eeeeee
+}
+
+h1 {
+	color: #0836f7;
+	text-align: center;
+	background-color: #ffaa00;
+	font-family: Comic Sans, sans-serif;
+	font-size: 88px;
+	font-weight: bold;
+	border: 3px solid blue;
+}
+
+table {
+	border: 2px solid black;
+	border-collapse: collapse;
+	width: 50%;
+}
+
+th, td {
+	border: 1px solid black;
+	padding: 5px;
+}

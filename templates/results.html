@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block body %}
+{{ chars }}
+<p>The character{% if winners|length > 1 %}s{% endif %} you had most coincidences with {% if winners|length > 1 %}were{% else %}was{% endif %}:</p>
+{% for winner in winners %}
+<img src="static/images/{{ winner['name'] }}.png" alt={{ winner['name'] }} width="100" height="100">
+<p>{{ winner['text'] }}</p>
+{% endfor %}
+{% endblock %}

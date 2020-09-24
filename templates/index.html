@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block heading %}
+{% endblock %}
+{% block body %}
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+<form action="{{ url_for('results') }}" method="post">
+<table id="question_list">
+	<tr>
+		<th>Question</th>
+		<th>True</th>
+		<th>False</th>
+	</tr>
+	{% for question in questions %}
+	<tr>
+		<td>{{ question.text }}</td>
+		<td><input type="radio" onclick="answercheck()" name={{ question.id }} value="T">
+		<td><input type="radio" onclick="answercheck()" name={{ question.id }} value="F">
+	</tr>
+	{% endfor %}
+</table>
+<button id="button" disabled>See results</button>
+</form>
+{% endblock %}
