@@ -58,4 +58,4 @@ def results():
             winners.append({'name': char['name'], 'text': char['text']})
         elif current_score == max_score:
             winners.append({'name': char['name'], 'text': char['text']})
-    return render_template("results.html", answers=answers, chars=chars, winners=winners)
+    return render_template("results.html", winners=winners)
