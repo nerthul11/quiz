@@ -1,5 +1,5 @@
-body {
-	background-color: #eeeeee
+:root {
+    background-color: #eeeeee;
 }
 
 h1 {
@@ -12,13 +12,19 @@ h1 {
 	border: 3px solid blue;
 }
 
+form {
+    width: 50%;
+    margin: auto;
+}
+
 table {
 	border: 2px solid black;
 	border-collapse: collapse;
-	width: 50%;
+	width: 100%;
+	float: center;
 }
 
 th, td {
 	border: 1px solid black;
-	padding: 5px;
+	padding: 4px;
 }
