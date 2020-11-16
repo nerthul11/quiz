@@ -62,3 +62,6 @@ def results():
         elif current_score == max_score:
             winners.append({'name': char['name'], 'text': char['text']})
     return render_template("results.html", winners=winners)
+
+if __name__ == '__main__':
+    app.run()
